@@ -1,0 +1,42 @@
+body {
+  background-color: #EBEEF2;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 8px;
+  border-color: grey;
+  width: 8%;
+}
+
+h1 {
+  color: #402312;
+}
+
+h3 {
+  color: #734226;
+}
+
+p {
+  color: #402312;
+}
+
+td {
+  padding-bottom: 35px;
+}
+
+em {
+  color: #402312;
+}
+
+strong {
+  color: #402312;
+}
+
+a {
+  color: #734226;
+}
+table{
+  padding: 10px;
+}
