@@ -318,7 +318,15 @@ input[type="button"] {
   vertical-align: middle;
 }
 
+.about_Top_Img {
+  position: relative;
+  height:600px;
+}
+
 .avatar {
+  position: absolute;
+  top: 500Px;
+  left: 650px;
   border-radius: 100%;
   width: 199px;
   height: 199px;
@@ -593,7 +601,8 @@ input[type="button"] {
   flex-wrap: wrap;
   width: 100%;
 }
-.icon{
+
+.icon {
   margin: 10px;
 }
 
