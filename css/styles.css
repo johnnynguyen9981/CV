@@ -277,29 +277,29 @@ input[type="button"] {
 
 .iconPhone {
   position: absolute;
-  top: 22rem;
+  top: 18rem;
   left:8.4rem;
 }
 
 .phoneNumber {
   color: #EBEEF3;
   position: absolute;
-  top: 23rem;
+  top: 19rem;
   left: 12.81rem;
   letter-spacing: 0.5em;
 }
 
 .iconMail {
   position: absolute;
-  top:22rem;
-  left: 34.68rem;
+  top: 22rem;
+  left: 8.4rem;
 }
 
 .email {
   color: #EBEEF3;
   position: absolute;
   top: 23rem;
-  left: 39.06rem;
+  left: 12.81rem;
   letter-spacing: 0.5em;
 }
 
