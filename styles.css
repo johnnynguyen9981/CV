@@ -1,0 +1,613 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EBEEF3;
+  margin: 0;
+  width: 1440px;
+  height: auto;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  z-index: 1;
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+  font-size: 121.5px;
+  color: #000000;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 3.375rem;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h6 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 200;
+}
+
+a {
+  color: #000000;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16.1px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+li {
+  padding: 15px;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+
+td {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: normal;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+input {
+  width: 505px;
+  padding: 12px 20px;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 2px solid grey;
+  background-color: #EBEEF3;
+}
+
+textarea {
+  width: 505px;
+  padding: 12px 20px;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 2px solid grey;
+  background-color: #EBEEF3;
+}
+
+input[type="button"] {
+  background: #8D6645;
+  box-shadow: 0 4px 4px #000000;
+  border-radius: 50px;
+  border: none;
+  color: #EBEEF3;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  height: 45px;
+  width: 295px;
+}
+
+/*******************Class Selector***************************************/
+.header {
+  top: 0;
+  left: 0;
+  height: 185px;
+  z-index: 1;
+}
+
+.headerBG {
+  position: fixed;
+  background-color: #F3EAE9;
+  opacity: 0.3;
+  top: 60px;
+  left: auto;
+  width: 1440px;
+  height: 90px;
+  z-index: 1;
+}
+
+.logo {
+  position: fixed;
+  top: 67px;
+  left: 205px;
+  height: 76.44px;
+  width: 120px;
+  z-index: 3;
+}
+
+.navBar {
+  position: fixed;
+  right: 222px;
+  top: 97px;
+  z-index: 3;
+}
+
+.navTag {
+  padding: 0 60px 0 0;
+  color: #000000;
+}
+
+.heroSection {
+  position: relative;
+  background-color: #EBEEF3;
+  height: 839px;
+}
+
+.divHeroEmail {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -130px;
+  top: 225px;
+}
+
+.heroEmail {
+  font-weight: 200;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.heroPhoto {
+  position: absolute;
+  top: 0;
+  left: 205px;
+  width: 1235px;
+  height: 839px;
+}
+
+.heroName {
+  position: relative;
+  background-color: #BF926B;
+  top: 543px;
+  left: 100px;
+  width: 610px;
+  height: 272px;
+}
+
+.Im {
+  position: absolute;
+  margin: 4px 322px 114px 101px;
+}
+
+.Johnny {
+  position: absolute;
+  margin: 108px 91px 10px 105px;
+}
+
+.line {
+  position: absolute;
+  background-color: #000000;
+  margin: 120px 228px 152px 315px;
+  width: 67px;
+  height: 4px;
+}
+
+.iconicWhite {
+  position: absolute;
+  top: 25px;
+  left: 450px;
+  width: 65px;
+  height: auto;
+}
+
+.serviceSection {
+  position: relative;
+  left: 0;
+  top: 100px;
+  background-color: #EBEEF3;
+  width: auto;
+  height: 944px;
+  margin: 0;
+}
+
+.serviceImg {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 103px;
+  left: 100px;
+  width: 505px;
+  height: 753px;
+}
+
+.title1 {
+  position: absolute;
+  top: 206px;
+  left: 530px;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+}
+
+.title2 {
+  position: absolute;
+  top: 180px;
+  left: 600px;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+}
+
+.services {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 35px;
+  left: 800px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #BF926B;
+}
+
+.serviceList {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 150px;
+  left: 800px;
+  width: 505px;
+}
+
+.homeImage3 {
+  height: 0;
+}
+
+.footer {
+  position: relative;
+  height: 460px;
+  background-color: #000000;
+  margin: 0;
+}
+
+.iconPhone {
+  position: absolute;
+  top: 18rem;
+  left:8.4rem;
+}
+
+.phoneNumber {
+  color: #EBEEF3;
+  position: absolute;
+  top: 19rem;
+  left: 12.81rem;
+  letter-spacing: 0.5em;
+}
+
+.iconMail {
+  position: absolute;
+  top: 22rem;
+  left: 8.4rem;
+}
+
+.email {
+  color: #EBEEF3;
+  position: absolute;
+  top: 23rem;
+  left: 12.81rem;
+  letter-spacing: 0.5em;
+}
+
+.iconYoutube {
+  position: absolute;
+  top: 22rem;
+  right:15.31rem;
+}
+
+.iconTwitter {
+  position: absolute;
+  top: 22rem;
+  right: 10.75rem;
+}
+
+.iconFacebook {
+  position: absolute;
+  top: 22em;
+  right: 6.19em;
+}
+
+.getInTouch {
+  color: #EBEEF3;
+  font-weight: 200;
+}
+
+.divGetInTouch {
+  position: absolute;
+  top: 50px;
+  left: 568px;
+}
+
+.divCopyright {
+  margin-top: 0;
+  padding-top: 420px;
+}
+
+.copyright {
+  color: #EBEEF3;
+}
+
+
+
+.sydney {
+width: 100%;
+height: 600px;
+object-fit: cover;
+vertical-align: middle;
+}
+
+.avatar {
+  border-radius: 100%;
+  width: 199px;
+  height: 199px;
+  z-index: 2;
+}
+
+.introduction {
+  background-color: #EBEEF3;
+  position: relative;
+  height: 1153px;
+}
+
+.firstName {
+  position: absolute;
+  top: 229px;
+  left: 100px;
+}
+
+.lastName {
+  position: absolute;
+  ;
+  top: 372px;
+  left: 205px;
+}
+
+.image3 {
+  position: absolute;
+  top: 300px;
+  right: 205px;
+}
+
+.bio {
+  position: absolute;
+  top: 650px;
+  left: 310px;
+  width: 400px;
+  height: 211px;
+  text-align: left;
+}
+
+.signature {
+  position: absolute;
+  top: 700px;
+  left: 491px;
+}
+
+.section_CV {
+  background-color: #FFFFFF;
+  height: 1300px;
+}
+
+.div_Cv_Title {
+  padding-top: 100px;
+}
+
+.cv_Title {
+  font-weight: 500;
+  letter-spacing: 1rem;
+}
+
+.div_GetToKnow {
+  padding: 0;
+}
+
+.getToKnow {
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+}
+
+.div_Education {
+  position: relative;
+}
+
+.label_Education {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.div_Qualification {
+  position: absolute;
+  left: 300px;
+  top: 150px;
+}
+
+.degree {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.finish_Date {
+  text-align: right;
+  font-weight: 300;
+  padding-top: 50px;
+}
+
+.school {
+  text-align: left;
+  font-weight: 300;
+}
+
+.div_Work {
+  position: relative;
+  top: 600px;
+}
+
+.label_Work {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.div_tbl_Work {
+  position: absolute;
+  left: 300px;
+  top: 150px;
+}
+
+.section_Advertise {
+  position: relative;
+  height: 272px;
+  background-color: #402313;
+}
+
+.ad_Content {
+  color: #C4C4C4;
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+.section_Skill {
+  position: relative;
+  height: 600px;
+}
+
+.skillTitle {
+  font-weight: 500;
+  letter-spacing: 1rem;
+  padding-top: 100px;
+}
+
+.application {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.div_tbl_Skill {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+}
+
+.contact_Image1 {
+  width: 1440px;
+}
+
+.section_Contact {
+  position: relative;
+  height: 1000px;
+}
+
+.div_BC_Back {
+  position: absolute;
+  top: 129px;
+  left: 205px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.div_BC_Front {
+  position: absolute;
+  top: 427px;
+  left: 310px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.div_Bottom_Contact_Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.txt_Contact_Name {
+  border-width: 5px;
+  border: none;
+}
+
+.div_Contact_Form {
+  position: absolute;
+  top: 129px;
+  left: 729px;
+  text-align: left;
+}
+
+.gallery_Client {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 50px;
+}
+
+.gallery_Client .clientProject {
+  width: calc(100%/4);
+  padding: 7px;
+}
+
+.gallery_Client .clientProject span {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery_Client .clientProject img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.gallery_Client .clientProject:hover img {
+  transform: scale(2.0);
+}
+
+@media (max-width:1000px) {
+  .gallery_Client .clientProject {
+    width: calc(100%/3);
+  }
+}
+
+@media (max-width:800px) {
+  .gallery_Client .clientProject {
+    width: calc(100%/2);
+  }
+}
+
+@media (max-width:600px) {
+  .gallery_Client .clientProject {
+    width: calc(100%);
+  }
+}
+
+.home_Img_3 {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.div_Contact_Top_Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
