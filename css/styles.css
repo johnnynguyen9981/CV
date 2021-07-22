@@ -1,7 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #EBEEF3;
   margin: 0;
-  padding: 0;
   width: 1440px;
   height: auto;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -58,14 +63,6 @@ li {
   letter-spacing: 0.1em;
 }
 
-hr {
-  width: 10%;
-  background-color: grey;
-  border-style: solid;
-  border-width: 2px;
-  margin-top: 80px;
-}
-
 td {
   font-size: 1.5rem;
   font-style: normal;
@@ -111,10 +108,8 @@ input[type="button"] {
 .header {
   top: 0;
   left: 0;
-  width: 1440px;
   height: 185px;
   z-index: 1;
-  margin: 0;
 }
 
 .headerBG {
@@ -152,19 +147,17 @@ input[type="button"] {
 .heroSection {
   position: relative;
   background-color: #EBEEF3;
-  width: 1440px;
   height: 839px;
 }
 
 .divHeroEmail {
   position: absolute;
   transform: rotate(-90deg);
-  right: 975px;
-  top: 185px;
+  left: -130px;
+  top: 225px;
 }
 
 .heroEmail {
-  width: 700px;
   font-weight: 200;
   letter-spacing: 0.5em;
   text-transform: uppercase;
@@ -272,18 +265,14 @@ input[type="button"] {
 }
 
 .homeImage3 {
-  position: absolute;
-  margin: 200px 0 0 0;
-  width: auto;
+  height: 0;
 }
 
 .footer {
   position: relative;
-  top: 570px;
-  margin: 0;
   height: 460px;
-  width: 1440px;
   background-color: #000000;
+  margin: 0;
 }
 
 .iconPhone {
@@ -295,7 +284,7 @@ input[type="button"] {
 .phoneNumber {
   color: #EBEEF3;
   position: absolute;
-  top: 300px;
+  top: 340px;
   left: 205px;
   letter-spacing: 0.5em;
 }
@@ -309,7 +298,7 @@ input[type="button"] {
 .email {
   color: #EBEEF3;
   position: absolute;
-  top: 300px;
+  top: 340px;
   left: 625px;
   letter-spacing: 0.5em;
 }
@@ -344,7 +333,8 @@ input[type="button"] {
 }
 
 .divCopyright {
-  padding-top: 375px;
+  margin-top: 0;
+  padding-top: 420px;
 }
 
 .copyright {
@@ -365,7 +355,7 @@ input[type="button"] {
 
 .avatar {
   position: absolute;
-  top: 500px;
+  top: 600px;
   left: 571px;
   border-radius: 100%;
   width: 199px;
@@ -376,8 +366,6 @@ input[type="button"] {
 .introduction {
   background-color: #EBEEF3;
   position: relative;
-  top: -100px;
-  width: 1440px;
   height: 1153px;
 }
 
@@ -417,7 +405,7 @@ input[type="button"] {
 
 .section_CV {
   background-color: #FFFFFF;
-  height: 1500px;
+  height: 1300px;
 }
 
 .div_Cv_Title {
@@ -507,7 +495,7 @@ input[type="button"] {
 
 .section_Skill {
   position: relative;
-  height: 100px;
+  height: 600px;
 }
 
 .skillTitle {
@@ -553,8 +541,10 @@ input[type="button"] {
 }
 
 .div_Bottom_Contact_Img {
-  position: absolute;
-  top: 985px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
 }
 
 .txt_Contact_Name {
@@ -567,4 +557,63 @@ input[type="button"] {
   top: 129px;
   left: 729px;
   text-align: left;
+}
+
+.gallery_Client {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 50px;
+}
+
+.gallery_Client .clientProject {
+  width: calc(100%/4);
+  padding: 7px;
+}
+
+.gallery_Client .clientProject span {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery_Client .clientProject img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.gallery_Client .clientProject:hover img {
+  transform: scale(2.0);
+}
+
+@media (max-width:1000px) {
+  .gallery_Client .clientProject {
+    width: calc(100%/3);
+  }
+}
+
+@media (max-width:800px) {
+  .gallery_Client .clientProject {
+    width: calc(100%/2);
+  }
+}
+
+@media (max-width:600px) {
+  .gallery_Client .clientProject {
+    width: calc(100%);
+  }
+}
+
+.home_Img_3 {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.div_Contact_Top_Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
