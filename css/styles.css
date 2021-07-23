@@ -320,17 +320,28 @@ input[type="button"] {
 
 .about_Top_Img {
   position: relative;
-  height:600px;
+  height: 600px;
 }
 
 .avatar {
-  position: absolute;
-  top: 500Px;
-  left: 650px;
-  border-radius: 100%;
-  width: 199px;
-  height: 199px;
+  position: relative;
+  top: -100px;
+  left: 600px;
+  display: flex;
+  flex-wrap: wrap;
   z-index: 2;
+}
+
+.avatar img {
+  border-radius: 100%;
+  height: 200px;
+  object-fit: cover;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.avatar:hover img {
+  transform: scale(1.1);
 }
 
 .introduction {
@@ -530,13 +541,15 @@ input[type="button"] {
 }
 
 .gallery_Client {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin: 30px 50px;
+  height: 500px;
 }
 
 .gallery_Client .clientProject {
-  width: calc(100%/4);
+  width: calc(100%/3);
   padding: 7px;
 }
 
@@ -572,7 +585,7 @@ input[type="button"] {
 
 @media (max-width:600px) {
   .gallery_Client .clientProject {
-    width: calc(100%);
+    width: 100%;
   }
 }
 
@@ -616,4 +629,9 @@ input[type="button"] {
   position: absolute;
   top: 22rem;
   left: 8rem;
+}
+
+.gallery_Persional {
+  position: relative;
+  height: 500px;
 }
