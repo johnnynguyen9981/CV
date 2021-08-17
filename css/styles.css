@@ -1,66 +1,19 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
+/* General Selectors */
 body {
+  padding: 0;
   background-color: #EBEEF3;
   margin: 0;
-  width: 1440px;
-  height: auto;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  z-index: 1;
-  display: block;
   text-align: center;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-h1 {
-  font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
-  font-size: 121.5px;
-  color: #000000;
-  font-weight: normal;
-  font-style: normal;
-}
-
-h3 {
-  font-size: 3.375rem;
-  font-style: normal;
-  font-weight: normal;
-}
-
-h4 {
-  font-size: 2.25rem;
-  font-style: normal;
-  font-weight: normal;
-}
-
-h5 {
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: normal;
-}
-
-h6 {
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 200;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #000000;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 16.1px;
-  font-weight: 400;
   text-decoration: none;
-}
-
-li {
-  padding: 15px;
   text-align: left;
-  font-size: 20px;
-  letter-spacing: 0.1em;
 }
 
 td {
@@ -73,20 +26,16 @@ td {
 
 input {
   width: 505px;
-  padding: 12px 20px;
   margin: 0;
   border: none;
-  box-sizing: border-box;
   border-bottom: 2px solid grey;
   background-color: #EBEEF3;
 }
 
 textarea {
   width: 505px;
-  padding: 12px 20px;
   margin: 0;
   border: none;
-  box-sizing: border-box;
   border-bottom: 2px solid grey;
   background-color: #EBEEF3;
 }
@@ -104,45 +53,55 @@ input[type="button"] {
   width: 295px;
 }
 
+
+/* Common Selectors */
+
+.title {
+  font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+  font-size: 6rem;
+  color:#fff;
+  font-weight: bold;
+}
+.sub-title{
+  font-size: 3.375rem;
+  color: #402313;
+  text-align: left;
+}
+.container-fluid{
+  padding:7% 15%;
+}
 /*******************Class Selector***************************************/
-.header {
-  top: 0;
-  left: 0;
+
+
+
+/*********************** Home Page *************************************/
+
+/* Header Section */
+#header .container-fluid{
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+
+.header-container {
   height: 185px;
-  z-index: 1;
 }
-
-.headerBG {
-  position: fixed;
-  background-color: #F3EAE9;
-  opacity: 0.3;
-  top: 60px;
-  left: auto;
-  width: 1440px;
-  height: 90px;
-  z-index: 1;
-}
-
 .logo {
-  position: fixed;
-  top: 67px;
-  left: 205px;
-  height: 76.44px;
-  width: 120px;
-  z-index: 3;
+  width: 15%;
+}
+.logoClicked{
+  width: 50%;
+}
+.navbar{
+  padding: 7% 15% 2% 15%;
+}
+.nav-item{
+  padding: 0 15px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-.navBar {
-  position: fixed;
-  right: 222px;
-  top: 97px;
-  z-index: 3;
-}
 
-.navTag {
-  padding: 0 60px 0 0;
-  color: #000000;
-}
+/* Hero Section */
 
 .heroSection {
   position: relative;
@@ -165,61 +124,50 @@ input[type="button"] {
 
 .heroPhoto {
   position: absolute;
-  top: 0;
-  left: 205px;
-  width: 1235px;
-  height: 839px;
+  left: 15%;
 }
 
 .heroName {
   position: relative;
+  text-align: left;
   background-color: #BF926B;
   top: 543px;
   left: 100px;
   width: 610px;
   height: 272px;
 }
-
-.Im {
+.first-title{
   position: absolute;
-  margin: 4px 322px 114px 101px;
+  left: 17%;
+  top: 5%;
 }
-
-.Johnny {
+.second-title{
   position: absolute;
-  margin: 108px 91px 10px 105px;
-}
-
-.line {
-  position: absolute;
-  background-color: #000000;
-  margin: 120px 228px 152px 315px;
-  width: 67px;
-  height: 4px;
+  left: 17%;
+  top:35%;
 }
 
 .iconicWhite {
   position: absolute;
-  top: 25px;
-  left: 450px;
-  width: 65px;
+  top: 10%;
+  left: 60%;
+  width: 10%;
   height: auto;
 }
+.iconicWhite:hover{
+  color: black;
+}
+
+/* Service Section */
 
 .serviceSection {
   position: relative;
-  left: 0;
-  top: 100px;
   background-color: #EBEEF3;
-  width: auto;
   height: 944px;
-  margin: 0;
 }
 
 .serviceImg {
   position: absolute;
-  margin: 0;
-  padding: 0;
   top: 103px;
   left: 100px;
   width: 505px;
@@ -228,8 +176,8 @@ input[type="button"] {
 
 .title1 {
   position: absolute;
-  top: 206px;
-  left: 530px;
+  top:30%;
+  left: 30%;
   font-weight: bold;
   transform: rotate(-90deg);
   text-transform: uppercase;
@@ -237,8 +185,8 @@ input[type="button"] {
 
 .title2 {
   position: absolute;
-  top: 180px;
-  left: 600px;
+  top: 26%;
+  left: 37%;
   font-weight: bold;
   transform: rotate(-90deg);
   text-transform: uppercase;
@@ -246,10 +194,8 @@ input[type="button"] {
 
 .services {
   position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 35px;
-  left: 800px;
+  top: 5%;
+  left: 60%;
   font-weight: bold;
   text-transform: uppercase;
   color: #BF926B;
@@ -259,13 +205,24 @@ input[type="button"] {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 150px;
-  left: 800px;
+  top: 15%;
+  left: 60%;
   width: 505px;
 }
+.list-item{
+  padding: 15px;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
 
-.homeImage3 {
-  height: 0;
+/* Home Bottom Image */
+
+
+/* Footer Section */
+.footer-contact{
+  font-size: 1rem;
+  font-weight: 200;
 }
 
 .footer {
@@ -292,8 +249,8 @@ input[type="button"] {
 }
 
 .getInTouch {
-  color: #EBEEF3;
-  font-weight: 200;
+  font-size: 3.375rem;
+  color: #fff;
 }
 
 .divGetInTouch {
@@ -301,7 +258,9 @@ input[type="button"] {
   top: 50px;
   left: 568px;
 }
-
+.divGetInTouch a{
+  text-decoration: none;
+}
 .divCopyright {
   margin-top: 0;
   padding-top: 420px;
@@ -311,10 +270,12 @@ input[type="button"] {
   color: #EBEEF3;
 }
 
+/*********************** Home Page *************************************/
+
+
 .sydney {
   width: 100%;
   height: 600px;
-  object-fit: cover;
   vertical-align: middle;
 }
 
@@ -335,7 +296,6 @@ input[type="button"] {
 .avatar img {
   border-radius: 100%;
   height: 200px;
-  object-fit: cover;
   vertical-align: middle;
   transition: all 0.3s ease;
 }
@@ -524,7 +484,6 @@ input[type="button"] {
 .div_Bottom_Contact_Img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   vertical-align: middle;
 }
 
@@ -562,7 +521,6 @@ input[type="button"] {
 .gallery_Client .clientProject img {
   width: 100%;
   height: 250px;
-  object-fit: cover;
   vertical-align: middle;
   transition: all 0.3s ease;
 }
@@ -571,34 +529,10 @@ input[type="button"] {
   transform: scale(2.0);
 }
 
-@media (max-width:1000px) {
-  .gallery_Client .clientProject {
-    width: calc(100%/3);
-  }
-}
-
-@media (max-width:800px) {
-  .gallery_Client .clientProject {
-    width: calc(100%/2);
-  }
-}
-
-@media (max-width:600px) {
-  .gallery_Client .clientProject {
-    width: 100%;
-  }
-}
-
-.home_Img_3 {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-}
 
 .div_Contact_Top_Img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .social_Icon {
