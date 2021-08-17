@@ -59,7 +59,6 @@ input[type="button"] {
 .title {
   font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
   font-size: 6rem;
-  color:#fff;
   font-weight: bold;
 }
 .sub-title{
@@ -89,7 +88,7 @@ input[type="button"] {
   width: 15%;
 }
 .logoClicked{
-  width: 50%;
+  transform: scale(2.0);
 }
 .navbar{
   padding: 7% 15% 2% 15%;
@@ -138,11 +137,13 @@ input[type="button"] {
 }
 .first-title{
   position: absolute;
+  color: #EBEEF3;
   left: 17%;
   top: 5%;
 }
 .second-title{
   position: absolute;
+  color: #EBEEF3;
   left: 17%;
   top:35%;
 }
@@ -154,9 +155,10 @@ input[type="button"] {
   width: 10%;
   height: auto;
 }
-.iconicWhite:hover{
-  color: black;
+.iconicWhiteClicked{
+  transform: scale(1.5);
 }
+
 
 /* Service Section */
 
@@ -270,7 +272,7 @@ input[type="button"] {
   color: #EBEEF3;
 }
 
-/*********************** Home Page *************************************/
+/*********************** About Page *************************************/
 
 
 .sydney {
@@ -312,13 +314,14 @@ input[type="button"] {
 
 .firstName {
   position: absolute;
+  color: #000;
   top: 229px;
   left: 100px;
 }
 
 .lastName {
   position: absolute;
-  ;
+  color: #000;
   top: 372px;
   left: 205px;
 }
@@ -457,6 +460,7 @@ input[type="button"] {
   top: 250px;
   left: 250px;
 }
+/********** Contact Page *************/
 
 .contact_Image1 {
   width: 1440px;
@@ -467,18 +471,25 @@ input[type="button"] {
   height: 1000px;
 }
 
-.div_BC_Back {
+.BC_Back {
   position: absolute;
   top: 129px;
   left: 205px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 20%;
 }
-
-.div_BC_Front {
+.BC_Back_Hover{
+transform: scale(1.5);
+}
+.BC_Front {
   position: absolute;
   top: 427px;
   left: 310px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 20%;
+}
+.BC_Front_Hover{
+transform: scale(1.5);
 }
 
 .div_Bottom_Contact_Img {
