@@ -1,34 +1,15 @@
+// Home Page
 
-
-//************* Home Page *******//
-
-//Hover Zoom Logo
+// Logo Hover Effect
 $("img.logo").hover(function(){
-  $(this).addClass("logoClicked");
-}, function(){
-  $(this).removeClass("logoClicked");
-});
-
-//Hover Zoom IconicWhite
-$("img.iconicWhite").hover(function(){
-  $(this).addClass("iconicWhiteClicked");
-}, function(){
-  $(this).removeClass("iconicWhiteClicked");
-});
-
-
-//************* Contact Page *******//
-
-//Hover Zooming the BC_Back
-$("img.BC_Back").hover(function(){
-  $(this).addClass("BC_Back_Hover");
+  $(this).addClass("logoHover");
 },function(){
-  $(this).removeClass("BC_Back_Hover");
+  $(this).removeClass("logoHover");
 });
 
-//Hover zooming the BC_Front
-$("img.BC_Front").hover(function(){
-  $(this).addClass("BC_Front_Hover");
+// IconicWhite Hover Effect
+$("img.iconicWhite").hover(function(){
+  $(this).addClass("iconicWhiteHover");
 }, function(){
-  $(this).removeClass("BC_Front_Hover");
+  $(this).removeClass("iconicWhiteHover");
 });

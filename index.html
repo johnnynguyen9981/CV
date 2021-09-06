@@ -3,153 +3,150 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Johnny Nguyen</title>
-  <link rel="icon" href="faviconWhite.ico">
-
-
-  <!-- Personalise CSS -->
+  <title>Navbar</title>
+  <!-- Bootstrap stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- personal Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
 <body>
 
   <!-- Header Section -->
-  <section id="header">
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a href="index.html"><img class="logo" src="photos/fullLockupBrown.png" alt="fullLockupBrown"></a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-primary" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-primary">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="work.html">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </nav>
 
 
-  </section>
-
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="heroSection">
-
-      <div class="divHeroEmail">
-        <h6 class="heroEmail">JOHNNY.NGUYEN9981@GMAIL.COM</h6>
-      </div>
-
-      <img class="heroPhoto" src="photos/Frame 2.png" alt="summerNightPhoto">
-
-      <div class="heroName">
-        <h1 class="title first-title">I'm</h1>
-        <h1 class="title second-title">Johnny</h1>
-        <a href="about.html"><img class="iconicWhite" src="photos/iconicMarkWhite.png" alt="Logo_Iconic_White"></a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Service Section -->
-  <section id="Service">
-    <div class="serviceSection">
-      <img class="serviceImg" src="photos/serviceImg.png" alt="Service Image">
-
-      <h4 class="sub-title title1">graphic designer</h4>
-
-
-      <h4 class="sub-title title2">web developer</h4>
-
-
-      <h3 class="sub-title services ">Services</h3>
-
-      <div class="serviceList">
-        <ul>
-          <li class="list-item">Logo</li>
-          <li class="list-item">Letterhead</li>
-          <li class="list-item">Business Card</li>
-          <li class="list-item">Postcards and flyers</li>
-          <li class="list-item">Magazine and newspaper ads</li>
-          <li class="list-item">Posters, banners</li>
-          <li class="list-item">Brochures (print and digital)</li>
-          <li class="list-item">UI/UX</li>
-          <li class="list-item">Web Development</li>
-          <li class="list-item">Branding Identity Package (including: Logo, Letterhead, Business Card)</li>
-          <li class="list-item">Front-End Web Development (including: UI/IX, Web Development)</li>
+  <nav class=" navbar sticky-top navbar-light navbar-expand-md bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img class="logo d-inline-block align-text-top" src="img/Logo.png" alt=""></a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="myNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
+  </nav>
+
+  <!-- Hero Section -->
+
+  <div class="container-fluid">
+
+    <section id="heroSection">
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-2  d-flex justify-content-center p-0">
+            <h6 class="heroEmail d-none d-md-block m-0">JOHNNY.NGUYEN9981@GMAIL.COM</h6>
+          </div>
+          <div class="col-md-10 position-relative d-flex justify-content-center align-self-end">
+            <img class="img-fluid" src="img/heroSection.jpeg" alt="heroSection">
+            <div class="container position-absolute top-50 start-0 heroName d-flex justify-content-center d-none d-md-block">
+              <h1 class="title d-flex justify-content-center text-wrap text-start">I'm Johnny</h1>
+              <a href="#"><img class="iconicWhite position-absolute start-50 bottom-50" src="img/iconicWhite.png" alt="Logo_Iconic_White"></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="position-relative container  heroName d-flex justify-content-center d-sm-block d-md-none">
+        <h1 class="title d-flex justify-content-center text-wrap text-start ">I'm Johnny</h1>
+        <a href="#"><img class="iconicWhite position-absolute start-50 bottom-50" src="img/iconicWhite.png" alt="Logo_Iconic_White"></a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Service Section -->
+  </section> -->
+  <section id="services">
+    <div class="container-fluid my-5">
+      <h3 class="sub_title mb-5">Services</h3>
+      <div class="row">
+        <div class="col-md-5">
+          <img class="img-fluid" src="img/serviceSection.jpg" alt="Service_Section">
+        </div>
+        <div class="col-md-7 text-md-start ">
+          <ul class="">
+            <li class="list-item">Logo</li>
+            <li class="list-item">Letterhead</li>
+            <li class="list-item">Business Card</li>
+            <li class="list-item">Postcards and flyers</li>
+            <li class="list-item">Magazine and newspaper ads</li>
+            <li class="list-item">Posters, banners</li>
+            <li class="list-item">Brochures (print and digital)</li>
+            <li class="list-item">UI/UX</li>
+            <li class="list-item">Web Development</li>
+            <li class="list-item">Branding Identity Package (including: Logo, Letterhead, Business Card)</li>
+            <li class="list-item">Front-End Web Development (including: UI/IX, Web Development)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Home Page botton Image -->
-
-  <img class="img-fluid" src="photos/home_Img_3.jpg" alt="Service_3" height="10px">
-
+  <!-- Bottom Image -->
+  <div class="container-fluid">
+    <img src="img/bottomSection.jpg" alt="Bottom_Img" class="img-fluid">
+  </div>
 
 
   <!-- Footer Section -->
-  <div class="footer">
+
+  <div class="container-fluid footer">
 
     <div class="divGetInTouch">
-      <a href="contact.html">
-        <h3 class="getInTouch">Get In Touch!</h3>
+      <a href="#">
+        <h3 class="getInTouch mb-5">Get In Touch!</h3>
       </a>
     </div>
 
-    <div class="iconPhone">
-      <img src="photos/iconPhone.png" alt="Icon Phone">
+    <div class="row text-start text-center">
+      <div class="col-md-4 d-flex justify-content-center">
+        <span><img class="icon d-none d-md-block" src="img/iconPhone.png" alt="Icon Phone"></span>
+        <span>
+          <h6 class="contactItem d-block mt-4 text-center">(+64) 426 864 865 (AU)</h6>
+        </span>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <span> <img class="icon d-none d-md-block" src="img/iconMail.png" alt="Icon Mail"></span>
+        <span>
+          <h6 class="contactItem d-block mt-4 text-center">johnny.nguyen9981@gmail.com</h6>
+        </span>
+
+      </div>
+      <div class="col-md-2">
+        <div class="container d-flex justify-content-around">
+          <span><img class="icon" src="img/IconYoutube.png" alt="Youtube Icon"></span>
+          <span><img class="icon" src="img/IconTwitter.png" alt="Twitter Icon "></span>
+          <span><img class="icon" src="img/iconFacebook.png" alt="Facebook Icon"></span>
+        </div>
+      </div>
     </div>
 
-    <div class="phoneNumber">
-      <h6 class="footer-contact">(+64) 426 864 865 (AU)</h6>
-    </div>
-
-    <div class="iconMail">
-      <img src="photos/iconMail.png" alt="Icon Mail">
-    </div>
-
-    <div class="email">
-      <h6 class="footer-contact">johnny.nguyen9981@gmail.com</h6>
-    </div>
-
-    <div class="social_Icon">
-      <span><img class="icon" src="photos/IconYoutube.png" alt="Youtube Icon"></span>
-      <span><img class="icon" src="photos/IconTwitter.png" alt="Twitter Icon "></span>
-      <span><img class="icon" src="photos/iconFacebook.png" alt="Facebook Icon"></span>
-    </div>
-
-    <div class="divCopyright">
-      <h6 class="copyright">© JOHNNY<strong>NGUYEN</strong> s t u d i o 2021</h6>
-    </div>
+    <h6 class="contactItem mt-5">© JOHNNY<strong>NGUYEN</strong> s t u d i o 2021</h6>
 
   </div>
 
+
+
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- Customise js -->
+  <!-- Customise JS -->
   <script src="js/index.js" charset="utf-8"></script>
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
 </body>
 

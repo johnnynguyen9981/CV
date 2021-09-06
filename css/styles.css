@@ -10,573 +10,83 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-
-a {
+a{
   text-decoration: none;
-  text-align: left;
 }
 
-td {
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: normal;
-  padding-right: 100px;
-  padding-bottom: 20px;
-}
-
-input {
-  width: 505px;
-  margin: 0;
-  border: none;
-  border-bottom: 2px solid grey;
-  background-color: #EBEEF3;
-}
-
-textarea {
-  width: 505px;
-  margin: 0;
-  border: none;
-  border-bottom: 2px solid grey;
-  background-color: #EBEEF3;
-}
-
-input[type="button"] {
-  background: #8D6645;
-  box-shadow: 0 4px 4px #000000;
-  border-radius: 50px;
-  border: none;
-  color: #EBEEF3;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  height: 45px;
-  width: 295px;
-}
-
-
-/* Common Selectors */
-
+/* Common Seclector */
 .title {
   font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
   font-size: 6rem;
   font-weight: bold;
+  color: #EBEEF3;
 }
-.sub-title{
-  font-size: 3.375rem;
-  color: #402313;
-  text-align: left;
+.sub_title{
+  font-size: 3rem;
+  font-weight: bold;
+  color:  #BF926B;
 }
-.container-fluid{
-  padding:7% 15%;
-}
-/*******************Class Selector***************************************/
-
-
-
-/*********************** Home Page *************************************/
 
 /* Header Section */
-#header .container-fluid{
-  padding-bottom: 5%;
-  padding-top: 3%;
+.logo {
+  width: 150px;
 }
 
-.header-container {
-  height: 185px;
+.logoHover {
+  transform: scale(1.1);
 }
-.logo {
-  width: 15%;
-}
-.logoClicked{
-  transform: scale(2.0);
-}
-.navbar{
-  padding: 7% 15% 2% 15%;
-}
-.nav-item{
-  padding: 0 15px;
+
+.nav-item {
+  margin: 1rem;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-
 /* Hero Section */
-
-.heroSection {
-  position: relative;
-  background-color: #EBEEF3;
-  height: 839px;
-}
-
-.divHeroEmail {
-  position: absolute;
-  transform: rotate(-90deg);
-  left: -130px;
-  top: 225px;
-}
-
 .heroEmail {
+  transform: rotate(-90deg);
   font-weight: 200;
   letter-spacing: 0.5em;
   text-transform: uppercase;
 }
 
-.heroPhoto {
-  position: absolute;
-  left: 15%;
-}
-
 .heroName {
-  position: relative;
-  text-align: left;
+  width: 30rem;
+  height: 15rem;
   background-color: #BF926B;
-  top: 543px;
-  left: 100px;
-  width: 610px;
-  height: 272px;
-}
-.first-title{
-  position: absolute;
-  color: #EBEEF3;
-  left: 17%;
-  top: 5%;
-}
-.second-title{
-  position: absolute;
-  color: #EBEEF3;
-  left: 17%;
-  top:35%;
+  z-index: 2;
 }
 
-.iconicWhite {
-  position: absolute;
-  top: 10%;
-  left: 60%;
-  width: 10%;
-  height: auto;
-}
-.iconicWhiteClicked{
-  transform: scale(1.5);
+.iconicWhite{
+  margin-top: 1rem;
 }
 
-
-/* Service Section */
-
-.serviceSection {
-  position: relative;
-  background-color: #EBEEF3;
-  height: 944px;
+.iconicWhiteHover {
+  transform: scale(1.1);
 }
 
-.serviceImg {
-  position: absolute;
-  top: 103px;
-  left: 100px;
-  width: 505px;
-  height: 753px;
-}
-
-.title1 {
-  position: absolute;
-  top:30%;
-  left: 30%;
-  font-weight: bold;
-  transform: rotate(-90deg);
-  text-transform: uppercase;
-}
-
-.title2 {
-  position: absolute;
-  top: 26%;
-  left: 37%;
-  font-weight: bold;
-  transform: rotate(-90deg);
-  text-transform: uppercase;
-}
-
-.services {
-  position: absolute;
-  top: 5%;
-  left: 60%;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #BF926B;
-}
-
-.serviceList {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 15%;
-  left: 60%;
-  width: 505px;
-}
+/* Services Section */
 .list-item{
-  padding: 15px;
-  text-align: left;
+  text-decoration: none;
   font-size: 20px;
   letter-spacing: 0.1em;
 }
 
-/* Home Bottom Image */
-
-
 /* Footer Section */
-.footer-contact{
-  font-size: 1rem;
-  font-weight: 200;
-}
-
 .footer {
-  position: relative;
-  height: 460px;
+  padding: 7rem;
   background-color: #000000;
-  margin: 0;
 }
-
-.phoneNumber {
-  color: #EBEEF3;
-  position: absolute;
-  top: 19rem;
-  left: 12.81rem;
-  letter-spacing: 0.5em;
-}
-
-.email {
-  color: #EBEEF3;
-  position: absolute;
-  top: 23rem;
-  left: 12.81rem;
-  letter-spacing: 0.5em;
-}
-
 .getInTouch {
   font-size: 3.375rem;
   color: #fff;
 }
-
-.divGetInTouch {
-  position: absolute;
-  top: 50px;
-  left: 568px;
-}
-.divGetInTouch a{
-  text-decoration: none;
-}
-.divCopyright {
-  margin-top: 0;
-  padding-top: 420px;
-}
-
-.copyright {
+.contactItem {
+  font-size: 0.75rem;
+  font-weight: 200;
   color: #EBEEF3;
+  letter-spacing: 0.5em;
 }
-
-/*********************** About Page *************************************/
-
-
-.sydney {
-  width: 100%;
-  height: 600px;
-  vertical-align: middle;
-}
-
-.about_Top_Img {
-  position: relative;
-  height: 600px;
-}
-
-.avatar {
-  position: relative;
-  top: -100px;
-  left: 600px;
-  display: flex;
-  flex-wrap: wrap;
-  z-index: 2;
-}
-
-.avatar img {
-  border-radius: 100%;
-  height: 200px;
-  vertical-align: middle;
-  transition: all 0.3s ease;
-}
-
-.avatar:hover img {
-  transform: scale(1.1);
-}
-
-.introduction {
-  background-color: #EBEEF3;
-  position: relative;
-  height: 1153px;
-}
-
-.firstName {
-  position: absolute;
-  color: #000;
-  top: 229px;
-  left: 100px;
-}
-
-.lastName {
-  position: absolute;
-  color: #000;
-  top: 372px;
-  left: 205px;
-}
-
-.image3 {
-  position: absolute;
-  top: 300px;
-  right: 205px;
-}
-
-.bio {
-  position: absolute;
-  top: 650px;
-  left: 310px;
-  width: 400px;
-  height: 211px;
-  text-align: left;
-}
-
-.signature {
-  position: absolute;
-  top: 700px;
-  left: 491px;
-}
-
-.section_CV {
-  background-color: #FFFFFF;
-  height: 1300px;
-}
-
-.div_Cv_Title {
-  padding-top: 100px;
-}
-
-.cv_Title {
-  font-weight: 500;
-  letter-spacing: 1rem;
-}
-
-.div_GetToKnow {
-  padding: 0;
-}
-
-.getToKnow {
-  letter-spacing: 0.3rem;
-  font-weight: 400;
-}
-
-.div_Education {
-  position: relative;
-}
-
-.label_Education {
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.div_Qualification {
-  position: absolute;
-  left: 300px;
-  top: 150px;
-}
-
-.degree {
-  text-transform: uppercase;
-  text-align: left;
-  font-weight: bold;
-  padding-top: 50px;
-}
-
-.finish_Date {
-  text-align: right;
-  font-weight: 300;
-  padding-top: 50px;
-}
-
-.school {
-  text-align: left;
-  font-weight: 300;
-}
-
-.div_Work {
-  position: relative;
-  top: 600px;
-}
-
-.label_Work {
-  position: absolute;
-  left: 100px;
-  top: 100px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.div_tbl_Work {
-  position: absolute;
-  left: 300px;
-  top: 150px;
-}
-
-.section_Advertise {
-  position: relative;
-  height: 272px;
-  background-color: #402313;
-}
-
-.ad_Content {
-  color: #C4C4C4;
-  margin-top: 0;
-  padding-top: 40px;
-}
-
-.section_Skill {
-  position: relative;
-  height: 600px;
-}
-
-.skillTitle {
-  font-weight: 500;
-  letter-spacing: 1rem;
-  padding-top: 100px;
-}
-
-.application {
-  text-align: left;
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-right: 10px;
-}
-
-.div_tbl_Skill {
-  position: absolute;
-  top: 250px;
-  left: 250px;
-}
-/********** Contact Page *************/
-
-.contact_Image1 {
-  width: 1440px;
-}
-
-.section_Contact {
-  position: relative;
-  height: 1000px;
-}
-
-.BC_Back {
-  position: absolute;
-  top: 129px;
-  left: 205px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  width: 20%;
-}
-.BC_Back_Hover{
-transform: scale(1.5);
-}
-.BC_Front {
-  position: absolute;
-  top: 427px;
-  left: 310px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  width: 20%;
-}
-.BC_Front_Hover{
-transform: scale(1.5);
-}
-
-.div_Bottom_Contact_Img {
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.txt_Contact_Name {
-  border-width: 5px;
-  border: none;
-}
-
-.div_Contact_Form {
-  position: absolute;
-  top: 129px;
-  left: 729px;
-  text-align: left;
-}
-
-.gallery_Client {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px 50px;
-  height: 500px;
-}
-
-.gallery_Client .clientProject {
-  width: calc(100%/3);
-  padding: 7px;
-}
-
-.gallery_Client .clientProject span {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-}
-
-.gallery_Client .clientProject img {
-  width: 100%;
-  height: 250px;
-  vertical-align: middle;
-  transition: all 0.3s ease;
-}
-
-.gallery_Client .clientProject:hover img {
-  transform: scale(2.0);
-}
-
-
-.div_Contact_Top_Img {
-  width: 100%;
-  height: 100%;
-}
-
-.social_Icon {
-  position: absolute;
-  top: 20rem;
-  left: 60rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.social_Icon .span {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.icon {
+.icon{
   margin: 10px;
-}
-
-.iconPhone {
-  position: absolute;
-  top: 18rem;
-  left: 8rem;
-}
-
-.iconMail {
-  position: absolute;
-  top: 22rem;
-  left: 8rem;
-}
-
-.gallery_Persional {
-  position: relative;
-  height: 500px;
 }
