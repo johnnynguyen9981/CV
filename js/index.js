@@ -13,3 +13,10 @@ $("img.iconicWhite").hover(function(){
 }, function(){
   $(this).removeClass("iconicWhiteHover");
 });
+
+// Avatar Hover Effect
+$("img.avatar").hover(function(){
+  $(this).addClass("avatarHover");
+}, function(){
+  $(this).removeClass("avatarHover");
+});

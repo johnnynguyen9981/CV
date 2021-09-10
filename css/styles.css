@@ -10,21 +10,30 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
 /* Common Seclector */
-.title {
+.display-1, .display-2, .display-6 {
   font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
-  font-size: 6rem;
-  font-weight: bold;
+  text-align: left;
   color: #EBEEF3;
 }
-.sub_title{
-  font-size: 3rem;
+
+.title {
+  font-size: 6rem;
   font-weight: bold;
-  color:  #BF926B;
+}
+
+.subTitle-1 {
+  font-size: 3rem;
+  color: #BF926B;
+}
+
+.subTitle-2 {
+  font-size: 2rem;
 }
 
 /* Header Section */
@@ -57,7 +66,7 @@ a{
   z-index: 2;
 }
 
-.iconicWhite{
+.iconicWhite {
   margin-top: 1rem;
 }
 
@@ -66,10 +75,17 @@ a{
 }
 
 /* Services Section */
-.list-item{
+.service {
+  color: #BF926B;
+}
+
+.list-item {
+  color: #EBEEF3;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 0.1em;
+  font-weight: 300;
+  background-color: #BF926B;
 }
 
 /* Footer Section */
@@ -77,16 +93,74 @@ a{
   padding: 7rem;
   background-color: #000000;
 }
+
 .getInTouch {
   font-size: 3.375rem;
   color: #fff;
 }
+
 .contactItem {
   font-size: 1rem;
   font-weight: 200;
   color: #EBEEF3;
   letter-spacing: 0.5em;
 }
-.icon{
+
+.icon {
   margin: 5px;
+  width: 3rem;
+}
+
+/************************ About Page **************/
+/* Top Image  */
+.avatar {
+  width: 15%;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.avatarHover {
+  transform: scale(1.1);
+}
+
+.banner {
+  background: url("https://lh3.googleusercontent.com/Env44iOQIWnXBvmflBe7-rN__YOcdaNU51u_qDFDMaeD263vWEMf_6_Tw069Uc1md3bgaF-b5CZuRqga_UwGyrgUhUT-Y1YERdiH7pprAwdnnlyY2Qr3jlx6w-WtJNsQ9yelnEmpss6Q5FpXxOemtu0CrFcSnc1KQ3oSd9EUjvQQ1O6DnIe4d1l857bcZR82OKZEbW3yfbVxNk8fus5csLrbbdcXS9bj25jVAXB-Z_xVpHlsPcf7a9V3vFJ_bW8DgAeDhyLe4-ByMU3nCmv5X1Yzfp6InmtUC46xRvP0dNXlUkTVwEzYJ5rC3o3rrpTQrqZLR4mTmr2_qMLYk42AtjMmJEaxXOMlSUrf570GggnRytxMKgvQ1AdzYDOrQBO7oyEajL38_pZX1ADafHq3osk7Hxm0D0BfM6KU37ZWafTYJZo8BE0s8RIaZz5QJZMdTOIprK88bNrsqsdTQTZXUBkwlL5gj-0RGVunsRW7w3KBNGFsg2_RubpXUE-iDIStahsh2R736yvuuzHjKDlpED0guWmt1sR4S1AeVuYM-2woANpvKOpnKeDJLjF-AwUkErVqpZZUUMzrhyUrqoE-JJMB-L7pARvs1bBqxMkwop1Ce3XEiZnzWmjCCcyslrSz2oUiGtGVl1KemS6yYP2UyV-KRspBN4gz8nGF9uDXl_UKJ_xP4FVlKojwfCUzl1fqTucbznfW7eGPFR3bzrrtdONPHA=w2048-h1152-no?authuser=1") fixed;
+  background-size: cover;
+  height: 35rem;
+}
+
+.bg-textCover {
+  background-color: #BF926B;
+}
+
+/* Introduction Section */
+.headShot3 {
+  width: 25rem;
+}
+
+.name {
+  color: #BF926B;
+}
+
+.signature {
+  width: 15rem;
+}
+
+/* CV Section */
+.cv {
+  font-weight: 500;
+  letter-spacing: 1rem;
+  line-height: 5rem;
+}
+
+.subCV {
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+}
+
+/* Advertise Section */
+.advertiseSection {
+  height: 15rem;
+  background-size: cover;
+  background-color: #402313;
 }
